@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">WeatherApp</string>
+    <string name="city_name">The city!</string>
+    <string name="weather_status">thundershowers</string>
+    <string name="min_temp">6</string>
+    <string name="max_temp">22</string>
+    <string name="previous_button">Previous button</string>
+    <string name="weather_icon">weather icon</string>
+    <string name="next_button">next button</string>
 </resources>

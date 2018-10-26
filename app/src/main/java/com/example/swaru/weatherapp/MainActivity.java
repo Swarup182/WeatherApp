@@ -3,10 +3,8 @@ package com.example.swaru.weatherapp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-
 import zh.wang.android.yweathergetter4a.WeatherInfo;
 import zh.wang.android.yweathergetter4a.YahooWeather;
 import zh.wang.android.yweathergetter4a.YahooWeatherInfoListener;
@@ -46,12 +44,13 @@ public class MainActivity extends AppCompatActivity implements YahooWeatherInfoL
 
     @Override
     public void gotWeatherInfo(WeatherInfo weatherInfo, YahooWeather.ErrorType errorType) {
-        if (weatherInfo != null){
+        if (weatherInfo != null) {
             cityName.setText(weatherInfo.getTitle());
             minTemp.setText(weatherInfo.getCurrentTemp());
         }
 
     }
+
     private void searchByPlaceName(String location) {
         mYahooWeather.setNeedDownloadIcons(true);
         mYahooWeather.setUnit(YahooWeather.UNIT.CELSIUS);
