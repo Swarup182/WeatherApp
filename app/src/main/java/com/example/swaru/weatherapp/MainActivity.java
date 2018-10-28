@@ -25,13 +25,13 @@ public class MainActivity extends AppCompatActivity implements YahooWeatherInfoL
         nextButton = findViewById(R.id.btn_next);
         cityName = findViewById(R.id.city_name);
         minTemp = findViewById(R.id.min_temp);
-        /*yahooWeatherInfoListener = new YahooWeatherInfoListener() {
+        yahooWeatherInfoListener = new YahooWeatherInfoListener() {
             @Override
             public void gotWeatherInfo(WeatherInfo weatherInfo, YahooWeather.ErrorType errorType) {
 
             }
-        };*/
-        //mYahooWeather.queryYahooWeatherByPlaceName(getApplicationContext(), "Sydney Australia", yahooWeatherInfoListener);
+        };
+        mYahooWeather.queryYahooWeatherByPlaceName(getApplicationContext(), "Sydney Australia", yahooWeatherInfoListener);
 
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
