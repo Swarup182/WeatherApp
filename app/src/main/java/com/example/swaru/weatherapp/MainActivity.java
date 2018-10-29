@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity implements YahooWeatherInfoL
 
     YahooWeather mYahooWeather;
     YahooWeatherInfoListener yahooWeatherInfoListener;
-    private ImageButton nextButton;
     private TextView cityName;
     TextView minTemp;
 
@@ -22,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements YahooWeatherInfoL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mYahooWeather = YahooWeather.getInstance();
-        nextButton = findViewById(R.id.btn_next);
+        ImageButton nextButton = findViewById(R.id.btn_next);
         cityName = findViewById(R.id.city_name);
         minTemp = findViewById(R.id.min_temp);
         yahooWeatherInfoListener = new YahooWeatherInfoListener() {
